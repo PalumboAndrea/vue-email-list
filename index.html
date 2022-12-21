@@ -24,8 +24,8 @@
                 Lista di account
             </h1>
             <ul class="email list">
-                <template v-for="email in emailList">
-                    <li v-if="emailList.length >= 10">
+                <template v-if="emailList.length >= 10">
+                    <li v-for="email in emailList">
                         {{email}}
                     </li>
                 </template>
