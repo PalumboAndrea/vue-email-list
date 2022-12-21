@@ -20,11 +20,16 @@
     <body>
         
         <div id="app">
-            <div class="email list"
-            v-if="emailList.length >= 10">
-                {{emailList}}
-            </div>
-            
+            <h1>
+                Lista di account
+            </h1>
+            <ul class="email list">
+                <template v-for="email in emailList">
+                    <li v-if="emailList.length >= 10">
+                        {{email}}
+                    </li>
+                </template>
+            </ul>
         </div>
 
         <!-- Import Axios -->
