@@ -19,11 +19,11 @@
 
     <body>
         
-        <div id="app">
+        <div id="app" class="container-fluid">
             <h1>
-                Lista di account
+                Lista di account:
             </h1>
-            <ul class="email list">
+            <ul class="email-list">
                 <template v-if="emailList.length >= 10">
                     <li v-for="email in emailList">
                         {{email}}
