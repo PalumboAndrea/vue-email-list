@@ -20,10 +20,15 @@
     <body>
         
         <div id="app">
-
+            <div class="email list"
+            v-if="emailList.length >= 10">
+                {{emailList}}
+            </div>
             
         </div>
 
+        <!-- Import Axios -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
         <!-- Import Vue -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <!-- JAVA SCRIPT -->
